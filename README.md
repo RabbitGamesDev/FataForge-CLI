@@ -24,6 +24,11 @@ Built with a simple philosophy:
 
 ### **Local-first. Fast. Professional.**
 
+> [!TIP]
+> **New to GitHub?**
+>
+> No worries. DataForge can be installed simply by downloading the repository as a ZIP file—no Git knowledge required.
+
 </div>
 
 ---
