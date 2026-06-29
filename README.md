@@ -75,156 +75,183 @@ Whether you're exploring a new codebase, organizing documentation or preparing t
 
 DataForge CLI can be installed in **two different ways** depending on your experience.
 
----
 
-## 📦 Option 1 — Download as ZIP (Recommended)
-
-If you don't have Git installed, this is the easiest way.
-
-### Step 1
-
-Open the GitHub repository.
-
-### Step 2
-
-Click the green **Code** button.
-
-### Step 3
-
-Select **Download ZIP**.
-
-### Step 4
-
-Extract the downloaded ZIP file anywhere on your computer.
-
-After extracting, you should have a folder similar to this:
-
-```text
-DataForge-CLI/
-│
-├── README.md
-├── LICENSE
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── SECURITY.md
-│
-└── dataforge-cli/
-    ├── main.py
-    ├── requirements.txt
-    ├── dataforge/
-    └── ...
-```
-
-### Step 5
-
-Open the **dataforge-cli** folder.
-
-### Step 6
-
-Open a terminal inside that folder.
-
-On **Windows**:
-
-- Hold **Shift**
-- Right click inside the folder
-- Select **Open in Terminal**
-
-Or simply open the folder in **Visual Studio Code** and use:
-
-```
-Terminal → New Terminal
-```
-
-### Step 7
-
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 8
-
-Run DataForge CLI:
-
-```bash
-python main.py
-```
-
-On the first launch, DataForge will automatically guide you through the initial setup, including your **Groq API Key**.
+> [!TIP]
+> New to the command line?
+>
+> Don't worry.
+> This guide walks you through installation step by step, even if you've never used Git before.
 
 ---
 
-## 💻 Option 2 — Clone with Git
+---
 
-If you already have Git installed:
+# 📦 Installation
+
+## Option 1 — Clone the Repository (Recommended)
+
+If you have Git installed, clone the project:
 
 ```bash
 git clone https://github.com/RabbitGamesDev/DataForge-CLI.git
+```
+
+Enter the project folder:
+
+```bash
 cd DataForge-CLI/dataforge-cli
+```
+
+Install the required Python packages:
+
+```bash
 pip install -r requirements.txt
+```
+
+Launch DataForge:
+
+```bash
 python main.py
 ```
 
 ---
 
-# 🔑 Getting your Groq API Key
+## Option 2 — Download as ZIP
 
-DataForge uses Groq to power its AI features.
+If you don't use Git:
 
-Getting an API Key only takes a minute.
+1. Open this repository on GitHub.
+2. Click **Code**.
+3. Click **Download ZIP**.
+4. Extract the ZIP anywhere on your computer.
+5. Open a terminal inside the **dataforge-cli** folder.
+6. Install the dependencies:
 
-### Step 1
-
-Create a free account at:
-
-https://console.groq.com/
-
----
-
-### Step 2
-
-Open:
-
-https://console.groq.com/keys
-
----
-
-### Step 3
-
-Click
-
+```bash
+pip install -r requirements.txt
 ```
-Create API Key
+
+7. Run the application:
+
+```bash
+python main.py
 ```
 
 ---
 
-### Step 4
+## 🔑 Configure your Groq API Key
 
-Copy the generated key.
+DataForge requires a Groq API Key to communicate with the AI model.
 
-It will look similar to:
+Getting one only takes a minute.
 
-```
-gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
+1. Visit **https://console.groq.com/**
+2. Sign in or create a free account.
+3. Open **API Keys**.
+4. Click **Create API Key**.
+5. Copy your key.
+
+The first time DataForge starts it will ask for your API Key and save it locally on your computer.
+
+Your key is never uploaded to GitHub and is automatically ignored by `.gitignore`.
 
 ---
 
-### Step 5
+# 🚀 Using DataForge from Anywhere (Windows)
 
-Launch DataForge.
+After installing DataForge you may want to execute it from any folder without navigating to the project directory every time.
 
-During the first execution you'll be asked:
+You can do this by creating a small launcher.
 
+Create a file called:
+
+```text
+dataforge.bat
 ```
-Enter your Groq API Key:
+
+Paste the following content inside it:
+
+```bat
+@echo off
+python "C:\PATH\TO\DataForge-CLI\dataforge-cli\main.py" %*
 ```
 
-Paste it and press ENTER.
+Replace the path with the location where **main.py** is stored on your computer.
 
-Your key will be stored locally on your own computer.
+Save the file.
+
+You can either:
+
+- keep it inside your own tools folder,
+- or place it inside a folder that exists in your Windows PATH.
+
+After that, simply open any terminal and type:
+
+```bash
+dataforge
+```
+
+or
+
+```bash
+dataforge scan .
+```
+
+without navigating to the DataForge directory.
+
+---
+
+# 💻 Basic Usage
+
+Open a terminal inside the project you want to analyze.
+
+Examples:
+
+Analyze the current project:
+
+```bash
+dataforge scan .
+```
+
+Explain a specific file:
+
+```bash
+dataforge explain main.py
+```
+
+Generate the architecture map:
+
+```bash
+dataforge map .
+```
+
+Start an interactive AI session:
+
+```bash
+dataforge ask
+```
+
+Generate onboarding documentation:
+
+```bash
+dataforge onboard .
+```
+
+Need help?
+
+Simply type:
+
+```bash
+dataforge
+```
+
+or
+
+```bash
+dataforge help
+```
+
+to display the list of available commands.
 
 ---
 
