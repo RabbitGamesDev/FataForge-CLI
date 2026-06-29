@@ -1,0 +1,4 @@
+groq
+inquirer
+python-dotenv
+pycryptodome
