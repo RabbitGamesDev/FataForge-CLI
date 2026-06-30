@@ -1,10 +1,14 @@
 <div align="center">
 
+<img src=".github/assets/Data%20Forge_CLI%20(GitHub%20Banner)%20.jpg" width="100%" alt="DataForge CLI Banner">
+
+<br><br>
+
 # 🛠️ DataForge CLI
 
 ### Your AI consultant inside the terminal.
 
-**Understand. Analyze. Organize.**
+**Analyze • Visualize • Document**
 
 Transform documents and project files into structured knowledge using AI directly from your terminal.
 
@@ -24,7 +28,6 @@ Built with a simple philosophy:
 
 ### **Local-first. Fast. Professional.**
 
-
 > [!TIP]
 > New to GitHub?
 >
@@ -43,6 +46,14 @@ Reading hundreds of documents, source files or project folders takes time.
 Instead of manually opening every file, DataForge scans your project, extracts useful information and uses AI to generate organized summaries directly inside your terminal.
 
 The project is designed to be lightweight, easy to configure and respectful of your privacy.
+
+## 🎬 See DataForge in Action
+
+<p align="center">
+  <img src=".github/assets/Data%20Forge.gif" alt="DataForge CLI Demo" width="100%">
+</p>
+
+Experience the complete setup and workflow in just a few seconds.
 
 ---
 
@@ -369,5 +380,9 @@ See the **LICENSE** file for details.
 Building tools for developers.
 
 ⭐ If you like this project, consider giving it a star.
+
+<br>
+
+Made with ❤️ by **RGS Labs™**
 
 </div>
