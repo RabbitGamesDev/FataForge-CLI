@@ -47,13 +47,23 @@ Instead of manually opening every file, DataForge scans your project, extracts u
 
 The project is designed to be lightweight, easy to configure and respectful of your privacy.
 
-## 🎬 See DataForge in Action
+<div align="center">
 
-<p align="center">
-  <img src=".github/assets/Data%20Forge.gif" alt="DataForge CLI Demo" width="100%">
-</p>
+# 🎬 Watch the Launch Video
 
-Experience the complete setup and workflow in just a few seconds.
+See DataForge CLI in action and discover how it transforms project analysis with AI.
+
+<br>
+
+<a href="https://youtu.be/gqvA_W7dlo8">
+
+<img src="https://img.shields.io/badge/▶_Watch_the_Launch_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
+
+</a>
+
+</div>
+
+---
 
 ---
 
